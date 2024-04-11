@@ -41,7 +41,7 @@ CREATE TABLE messages (
 CREATE TABLE ai_contexts (
     id TEXT PRIMARY KEY,
     name TEXT NOT NULL,
-    value TEXT NOT NULL
+    value TEXT NOT NULL,
     role TEXT NOT NULL CHECK (role IN ('System', 'Assistant', 'User')),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )
